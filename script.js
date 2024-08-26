@@ -2,13 +2,13 @@ function openEnvelope() {
     const envelope = document.getElementById('envelope');
     const letter = document.getElementById('letter');
 
-    // Open the envelope flap and body
+    // Open the envelope flap
     envelope.querySelector('.envelope-flap').style.transform = 'rotateX(-180deg)';
-    envelope.style.transform = 'rotateX(-180deg)';
-
-    // Reveal the letter
+    
+    // Rotate the envelope body and reveal the letter with correct orientation
     setTimeout(() => {
-        letter.style.transform = 'rotateX(0deg)'; // Rotate the letter into view correctly
+        envelope.style.transform = 'rotateX(-180deg)';
+        letter.style.transform = 'rotateX(0deg)'; // Rotate to 0deg to be right-side up
         letter.style.opacity = '1';
-    }, 500); // Delay the letter appearance slightly to sync with the envelope opening
+    }, 500); // Adjust delay if necessary
 }
