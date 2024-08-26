@@ -28,7 +28,7 @@ body {
     position: absolute;
     width: 100%;
     height: 50%;
-    background-color: #ff6f61;
+    background-color: #FFFFFF;
     transform-origin: bottom;
     transition: transform 1s;
 }
@@ -59,7 +59,7 @@ body {
     padding: 20px;
     box-sizing: border-box;
     opacity: 0;
-    transform: rotateX(180deg); /* Initial rotation 180deg */
+    transform: rotateX(-90deg); /* Initial rotation 180deg */
     transform-origin: bottom;
     transition: opacity 0.5s, transform 1s;
     display: flex;
