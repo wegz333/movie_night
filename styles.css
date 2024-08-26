@@ -60,8 +60,8 @@ body {
     padding: 20px;
     box-sizing: border-box;
     opacity: 0;
-    transform: rotateX(90deg);
-    transform-origin: top;
+    transform: rotateX(-180deg); /* Update this line */
+    transform-origin: bottom; /* Update this line */
     transition: opacity 0.5s, transform 0.5s;
     display: flex;
     flex-direction: column;
