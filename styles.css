@@ -59,8 +59,8 @@ body {
     padding: 20px;
     box-sizing: border-box;
     opacity: 0;
-    transform: rotateX(90deg); /* Start at 90deg to hide initially */
-    transform-origin: top;
+    transform: rotateX(180deg); /* Initial rotation 180deg */
+    transform-origin: bottom;
     transition: opacity 0.5s, transform 1s;
     display: flex;
     flex-direction: column;
